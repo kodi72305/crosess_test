@@ -1,0 +1,3 @@
+osource "D:/Git/crosses/crosess_test/modules/heetuic/zmk-for-crosses46-dual/boards/shields/*/Kconfig.defconfig"
+osource "D:/Git/crosses/crosess_test/modules/keebs/gggw-zmk-keebs/boards/shields/*/Kconfig.defconfig"
+osource "D:/Git/crosses/crosess_test/zmk/app/boards/shields/*/Kconfig.defconfig"
