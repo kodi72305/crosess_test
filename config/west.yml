@@ -6,9 +6,21 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: heetuic
+      url-base: https://github.com/HeeTuic
+    - name: lanyagagaga-droid
+      url-base: https://github.com/lanyagagaga-droid
   projects:
     - name: zmk
       remote: zmkfirmware
-      import: app/west.yml
+      import: app/west.yml 
+    - name: zmk-for-crosses46-dual
+      remote: heetuic
+      revision: main
+      path: modules/heetuic/zmk-for-crosses46-dual
+    - name: gggw-zmk-keebs
+      remote: lanyagagaga-droid
+      revision: main          # замени на нужную ветку/тег, если отличается
+      path: modules/keebs/gggw-zmk-keebs
   self:
     path: config
